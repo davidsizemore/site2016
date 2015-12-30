@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #b1def1">
+
+  <head>
+    <title>David Sizemore - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/sizemore2015.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Karla:700,400,400italic' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script type="text/javascript" src="../assets/masonry.pkgd.js">
+      $(document).ready( function() {
+        // init Masonry
+        var $grid = $('.grid').masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer'
+        });
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry();
+        });  
+      });
+    </script>
+  </head>
+  
+  <body style="background-color: #b1def1">
+
+  <div class="main">
+    <div class="content">
+
+      <div id="header">
+        <h1>
+          <a href="../index.html" style="text-decoration: none;">David Sizemore Design</a>
+        </h1>
+      </div>
+
+      <div class="grid js-masonry">
+
+       <div class="grid-item grid-item--width2">
+            <img src="../assets/about/david_sizemore.jpg">
+      </div>
+
+       <div class="grid-item grid-item--width2 longform">
+            <h2>
+              David Sizemore is a designer living in Atlanta. He works as an art director for <a href="http://mailchimp.com/">MailChimp</a>.
+            </h2>
+            <p>
+              Before drinking the technology startup kool-aid, David billed agency hours for brands like Microsoft, Russell Athletics, Goodyear, and Carnival. He continues to participate in freelance branding and illustration projects, and is available to speak at design gatherings and bar mitzvahs. 
+            </p>
+            <p>
+              <a href="http://twitter.com/david_sizemore" class="work" target="_blank">Twitter</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="http://dribbble.com/david_sizemore" class="work" target="_blank">Dribbble</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="mailto:davidsizemore.designer@gmail.com" target="_blank" class="work">Contact</a>
+            </p>
+      </div>
+
+    </div><!--masonry-->
+
+    </div> <!--content-->
+
+      <div class="foot">
+        <div class="quarter-width">
+          <a href="http://seyez.biz/"><img src="../assets/seyez.svg" style="max-width: 24px; padding-bottom: 18px;"></a>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="http://seyez.biz/" style="color: #fff;">&#9783;&#9783;&#9783;</a>
+            <br><a href="http://store.davidsizemoredesign.com/" style="color: #fff;">Store</a>
+            <br><a href="../pages/about.html" style="color: #fff;">About</a>
+          </p>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="http://twitter.com/david_sizemore" style="color: #fff;">Twitter</a>
+            <br><a href="http://dribbble.com/david_sizemore" style="color: #fff;">Dribbble</a>
+            <br>&copy; 2015
+          </p>
+        </div>        
+      </div>
+
+    </div><!--main-->
+    
+  </body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>David Sizemore - Jobs Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../assets/sizemore2015.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Karla:700,400,400italic' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script type="text/javascript" src="../../assets/masonry.pkgd.js">
+      $(document).ready( function() {
+        // init Masonry
+        var $grid = $('.grid').masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer'
+        });
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry();
+        });  
+      });
+    </script>
+  </head>
+  
+  <body>
+
+  <div class="main">
+    <div class="content">
+
+      <div id="header">
+        <h1>
+          <a href="../../index.html">David Sizemore Design</a>
+        </h1>
+      </div>
+      
+      <div class="longform2 padtop01">
+          <iframe width="1200" height="675" src="https://www.youtube.com/embed/3dt3oOY91mM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      <div class="longform padtop01">
+        <h2>Jobs Page</h2>
+        <p>
+          This was such a fun project. A whole bunch of people worked on this project, and it's not alive anymore. But it captured a really fantastic moment in time for MailChimp and the people who were there. 
+         </p>
+        <p>
+          You can check out the video above of how the page used to look, <a href="https://vimeo.com/101357773">watch one of the videos</a>, and <a href="http://wearecaravan.tv/work/mailchimp-recruiting-film">read a bit more</a> <a href="http://www.jasontravisdesign.com/jobs-1/">about the project</a>.
+         </p>
+      </div>
+
+    </div><!--masonry-->
+
+    </div> <!--content-->
+
+      <div class="foot">
+        <div class="quarter-width">
+          <a href="../../index.html"><img src="../../assets/seyez.svg" style="max-width: 24px; padding-bottom: 18px;"></a>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="../../index.html" style="color: #fff;">Home</a>
+            <br><a href="http://store.davidsizemoredesign.com/" style="color: #fff;">Store</a>
+            <br><a href="../../pages/about.html" style="color: #fff;">About</a>
+          </p>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="http://twitter.com/david_sizemore" style="color: #fff;">Twitter</a>
+            <br><a href="http://dribbble.com/david_sizemore" style="color: #fff;">Dribbble</a>
+            <br>&copy; 2015
+          </p>
+        </div>        
+      </div>
+
+    </div><!--main-->
+    
+  </body>
+
+</html>
