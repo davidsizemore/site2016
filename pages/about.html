@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #b1def1">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
     <title>David Sizemore - About</title>
@@ -8,21 +8,9 @@
     <link href='http://fonts.googleapis.com/css?family=Karla:700,400,400italic' rel='stylesheet' type='text/css'>    
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <script type="text/javascript" src="../assets/masonry.pkgd.js">
-      $(document).ready( function() {
-        // init Masonry
-        var $grid = $('.grid').masonry({
-          itemSelector: '.grid-item',
-          percentPosition: true,
-          columnWidth: '.grid-sizer'
-        });
-        // layout Isotope after each image loads
-        $grid.imagesLoaded().progress( function() {
-          $grid.masonry();
-        });  
-      });
-    </script>
   </head>
+  
+  <body>
   
   <body style="background-color: #b1def1">
 
@@ -78,6 +66,23 @@
       </div>
 
     </div><!--main-->
+
+    <script type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="../assets/masonry.pkgd.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        // init Masonry
+        var $grid = $('.grid').masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+        });
+        // layout Isotope after each image loads
+        $grid-item.imagesLoaded().progress( function() {
+          $grid.masonry(reload);
+        });  
+      });
+    </script>
     
   </body>
 
