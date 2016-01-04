@@ -23,6 +23,9 @@
 
       <div class="grid js-masonry">
 
+      <div class="gutter-sizer"></div>
+      <div class="grid-sizer"></div>
+
        <div class="grid-item">
             <img src="../assets/posters/folsomprison/folsomprison03_half.jpg">
       </div>
@@ -96,12 +99,18 @@
     <script type="text/javascript" src="../assets/masonry.pkgd.js"></script>
 
     <script type="text/javascript">
-      $(function() {
+      $(document).ready(function() {
         // init Masonry
-        var $grid = $('.grid').masonry({
+        $grid = $('.grid').masonry({
           itemSelector: '.grid-item',
-          percentPosition: true,
+        // use outer width of grid-sizer for columnWidth
+          columnWidth: '.grid-sizer',
+        // do not use .grid-sizer in layout
+          itemSelector: '.grid-item',
+          gutter: '.gutter-sizer',
+          percentPosition: true   
         });
+
         // layout Isotope after each image loads
         $grid-item.imagesLoaded().progress( function() {
           $grid.masonry(reload);

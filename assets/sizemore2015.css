@@ -223,23 +223,27 @@ img {
 }
 
 .grid {
-    margin: auto;
+    margin: 0 auto;
     position: relative;
 }
 
-.grid-sizer {
-    width: 320px;
+.grid-sizer,
+.grid-item {
+  width: 19%;
+}
+
+.gutter-sizer { 
+    width: 1.25%; 
 }
 
 .grid-item { 
-    width: 320px; 
-    margin: 24px ;
+    margin: 1em 0;
     display: block;
 }
 
 .grid-item--width2 { 
-    width: 688px; 
-    margin: 24px;    
+    width: 38%; 
+    margin: 1em 0;
     display: block;
 }
 
@@ -428,15 +432,17 @@ h3 {
   position: relative;
 }
 
-.grid-item { 
-    width: 48%; 
-    margin: 24px auto ;
-    padding: 0 1%;
+.grid-sizer,
+.grid-item {
+    width: 48%;
+}
+
+.gutter-sizer { 
+    width: 10%; 
 }
 
 .grid-item--width2 { 
     width: 100%; 
-    margin: 24px auto;
 }
 
 .home-image {
