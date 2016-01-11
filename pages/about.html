@@ -70,27 +70,21 @@
 
     </div><!--main-->
 
-    <script type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
-    <script type="text/javascript" src="../assets/masonry.pkgd.js"></script>
+    <script language="javascript" type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
+    <script language="javascript" type="text/javascript" src="../assets/masonry.pkgd.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        // init Masonry
-        $grid = $('.grid').masonry({
-          itemSelector: '.grid-item',
-        // use outer width of grid-sizer for columnWidth
-          columnWidth: '.grid-sizer',
-        // do not use .grid-sizer in layout
-          itemSelector: '.grid-item',
-          gutter: '.gutter-sizer',
-          percentPosition: true   
-        });
+        $(document).ready( function() {
+          // init Masonry after all images have loaded
+          var $grid = $('.grid').imagesLoaded( function() {
+            $grid.masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+              columnWidth: '.grid-sizer'
+            }); 
+          });
 
-        // layout Isotope after each image loads
-        $grid-item.imagesLoaded().progress( function() {
-          $grid.masonry(reload);
-        });  
-      });
+        });
     </script>
     
   </body>
