@@ -31,10 +31,15 @@
       </div>
 
        <div class="grid-item grid-item--width2">
-        <a href="illustration/stateplates.html">
-            <div class="more purple">More</div>
             <img src="../assets/illustration/stateplates/stateplates01.jpg" class="imagehover">
-        </a>
+            <p class="caption">
+              <strong>Title</strong> 
+              <br>
+              <em>Role played</em>
+              <br>
+                <a href="illustration/stateplates.html">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item">
@@ -54,9 +59,15 @@
       </div>
 
        <div class="grid-item grid-item--width2">
-            <div class="more purple">More</div>
-            <a href="http://reach.merchline.com/collections/116-limited-official-t-shirt-club">
             <img src="../assets/illustration/reachkb/reachkb03.jpg" class="imagehover">
+            <p class="caption">
+              <strong>Title</strong> 
+              <br>
+              <em>Role played</em>
+              <br>
+                <a href="http://reach.merchline.com/collections/116-limited-official-t-shirt-club">
+                  See More</a> &#8594;
+            </p>
         </a>
       </div>
 
@@ -85,10 +96,7 @@
       </div>
 
        <div class="grid-item">
-        <a href="">
-            <div class="more purple">More</div>
-            <img src="../assets/illustration/2013AlbumCover.jpg" class="imagehover">
-          </a>
+            <img src="../assets/illustration/2013AlbumCover.jpg">
       </div>
 
        <div class="grid-item">
@@ -108,10 +116,15 @@
       </div>
 
        <div class="grid-item grid-item--width2">
-            <div class="more purple">More</div>
-            <a href="http://cargocollective.com/momentus" target="_blank">
             <img src="../assets/illustration/momentus/momentus01.jpg" class="imagehover">
-          </a>
+            <p class="caption">
+              <strong>Title</strong> 
+              <br>
+              <em>Role played</em>
+              <br>
+                <a href="http://cargocollective.com/momentus" target="_blank">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item">
@@ -160,27 +173,21 @@
 
     </div><!--main-->
 
-    <script type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
-    <script type="text/javascript" src="../assets/masonry.pkgd.js"></script>
+    <script language="javascript" type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
+    <script language="javascript" type="text/javascript" src="../assets/masonry.pkgd.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        // init Masonry
-        $grid = $('.grid').masonry({
-          itemSelector: '.grid-item',
-        // use outer width of grid-sizer for columnWidth
-          columnWidth: '.grid-sizer',
-        // do not use .grid-sizer in layout
-          itemSelector: '.grid-item',
-          gutter: '.gutter-sizer',
-          percentPosition: true   
-        });
+        $(document).ready( function() {
+          // init Masonry after all images have loaded
+          var $grid = $('.grid').imagesLoaded( function() {
+            $grid.masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+              columnWidth: '.grid-sizer'
+            }); 
+          });
 
-        // layout Isotope after each image loads
-        $grid-item.imagesLoaded().progress( function() {
-          $grid.masonry(reload);
-        });  
-      });
+        });
     </script>
     
   </body>
