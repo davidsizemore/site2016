@@ -30,28 +30,68 @@
           <a href="art-direction/creativeloafing.html">
             <img class="imagehover" src="../assets/art-direction/creativeloafing/creativeloafing02_half.jpg">
           </a>
+            <p class="caption">
+              <strong>Creative Loafing Recruiting Campaign</strong> 
+              <br>
+              <em>Concept, Art Direction</em>
+              <br>
+                <a href="art-direction/creativeloafing.html">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item">
         <a href="art-direction/futuralbum.html">
             <img src="../assets/art-direction/futuralbum/FuturalbumTease.gif" class="imagehover">
           </a>
+            <p class="caption">
+              <strong>Futuralbum</strong> 
+              <br>
+              <em>Concept, Design</em>
+              <br>
+                <a href="art-direction/futuralbum.html">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item">
           <a href="https://blog.mailchimp.com/the-life-of-a-mailchimp-ad/">
             <img class="imagehover" src="../assets/art-direction/decaturbookfest/decaturbookfest01_half.jpg">
           </a>
+            <p class="caption">
+              <strong>Decatur Book Fest</strong> 
+              <br>
+              <em>Concept, Art Direction</em>
+              <br>
+                <a href="https://blog.mailchimp.com/the-life-of-a-mailchimp-ad/">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item grid-item--width2">
           <a href="art-direction/featurespage.html">
             <img class="imagehover" src="../assets/art-direction/featurespage/featurespage04_full.jpg">
           </a>
+            <p class="caption">
+              <strong>Features Page Photo Shoot</strong> 
+              <br>
+              <em>Art Direction</em>
+              <br>
+                <a href="art-direction/featurespage.html">
+                  See More</a> &#8594;
+            </p>
       </div>
 
        <div class="grid-item">
             <img class="imagehover" src="../assets/art-direction/setdesign/setdesign01_half.jpg">
+            <p class="caption">
+              <strong>Set Design</strong> 
+              <br>
+              <em>Art Direction, heavy lifting</em>
+              <br>
+                <a href="illustration/stateplates.html">
+                  See More</a> &#8594;
+            </p>
       </div>
 
     </div><!--masonry-->
@@ -77,24 +117,24 @@
       </div>
 
     </div><!--main-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
     <script language="javascript" type="text/javascript" src="../assets/masonry.pkgd.js"></script>
 
     <script type="text/javascript">
-        $(document).ready( function() {
-          // init Masonry after all images have loaded
-          var $grid = $('.grid').imagesLoaded( function() {
-            $grid.masonry({
-              itemSelector: '.grid-item',
-              percentPosition: true,
-              columnWidth: '.grid-sizer'
-            }); 
-          });
+      // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
-        });
+      // init Masonry after all images have loaded
+      var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer'
+        }); 
+      });
     </script>
-    
+          
   </body>
 
 </html>

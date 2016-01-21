@@ -26,114 +26,83 @@
       <div class="grid-sizer"></div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosbank_third.jpg">
+            <img src="../assets/branding/mm.jpg">
       </div>
 
        <div class="grid-item">
-          <a href="branding/tinyletter.html">
-            <div class="more yellow">More</div>
-            <img src="../assets/branding/tinyletter/tinyletter03_third.jpg" class="imagehover">
-          </a>
+            <img src="../assets/branding/kare.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosbeer_third.jpg">
+            <img src="../assets/branding/tinyletter.jpg">
       </div>
 
        <div class="grid-item">
-          <a href="branding/mcsquared.html">
-            <div class="more yellow">More</div>
-            <img src="../assets/branding/mcsquared/mcsquared01_third.jpg" class="imagehover">
-          </a>
+            <img src="../assets/branding/woodenboombox.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosfifth_third.jpg">
+            <img src="../assets/branding/yadkin.jpg">
       </div>
 
        <div class="grid-item">
-          <a href="branding/woodenboombox.html">
-            <div class="more yellow">More</div>
-            <img src="../assets/branding/woodenboombox/woodenboombox01_half.jpg" class="imagehover">
-          </a>
+            <img src="../assets/branding/velochimps.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosfoodforthought_third.jpg">
+            <img src="../assets/branding/thev.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/thev/thev02_third.jpg">
+            <img src="../assets/branding/ccc.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosfun_third.jpg">
+            <img src="../assets/branding/brewsletter.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logoskare_third.jpg">
+            <img src="../assets/branding/redemptionhousing02.gif">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosmm_third.jpg">
+            <img src="../assets/branding/research.jpg">
       </div>
 
        <div class="grid-item">
-          <a href="branding/kithandkin.html">
-            <div class="more yellow">More</div>
-            <img src="../assets/branding/kithandkin/kithandkin01_third.jpg" class="imagehover">
-          </a>
+            <img src="../assets/branding/rise.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosresearch_third.jpg">
+            <img src="../assets/branding/fifth.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logosrise_third.jpg">
+            <img src="../assets/branding/six02.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logossix02_third.jpg">
+            <img src="../assets/branding/kithandkin.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logossnake_third.jpg">
+            <img src="../assets/branding/snake.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logossunnyish_third.jpg">
+            <img src="../assets/branding/thefunshops.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logossunnyish02_third.jpg">
+            <img src="../assets/branding/mcsquared.jpg">
       </div>
 
        <div class="grid-item">
-          <a href="branding/ccc.html">
-            <div class="more yellow">More</div>
-            <img src="../assets/branding/ccc/ccc_thumb.jpg" class="imagehover">
-          </a>
+            <img src="../assets/branding/velochimps02.jpg">
       </div>
 
        <div class="grid-item">
-            <img src="../assets/branding/logos/logostutor_third.jpg">
-      </div>
-
-       <div class="grid-item">
-            <img src="../assets/branding/logos/logosvelochimps01_third.jpg" class="imagehover">
-      </div>
-
-       <div class="grid-item">
-            <img src="../assets/branding/illuminati/illuminati01_third.gif">
-      </div>
-
-       <div class="grid-item">
-            <img src="../assets/branding/logos/logosvelochimps02_third.jpg">
-      </div>
-
-       <div class="grid-item">
-            <img src="../assets/branding/logos/logosvelochimps03_third.jpg">
+            <img src="../assets/branding/alulu.jpg">
       </div>
 
     </div><!--masonry-->
@@ -159,24 +128,24 @@
       </div>
 
     </div><!--main-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="../assets/imagesloaded.pkgd.js"></script>
     <script language="javascript" type="text/javascript" src="../assets/masonry.pkgd.js"></script>
 
     <script type="text/javascript">
-        $(document).ready( function() {
-          // init Masonry after all images have loaded
-          var $grid = $('.grid').imagesLoaded( function() {
-            $grid.masonry({
-              itemSelector: '.grid-item',
-              percentPosition: true,
-              columnWidth: '.grid-sizer'
-            }); 
-          });
+      // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
-        });
+      // init Masonry after all images have loaded
+      var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer'
+        }); 
+      });
     </script>
-    
+          
   </body>
 
 </html>
