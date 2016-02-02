@@ -8,20 +8,6 @@
     <link href='http://fonts.googleapis.com/css?family=Karla:700,400,400italic' rel='stylesheet' type='text/css'>    
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <script type="text/javascript" src="../../assets/masonry.pkgd.js">
-      $(document).ready( function() {
-        // init Masonry
-        var $grid = $('.grid').masonry({
-          itemSelector: '.grid-item',
-          percentPosition: true,
-          columnWidth: '.grid-sizer'
-        });
-        // layout Isotope after each image loads
-        $grid.imagesLoaded().progress( function() {
-          $grid.masonry();
-        });  
-      });
-    </script>
   </head>
   
   <body>
@@ -35,18 +21,26 @@
         </h1>
       </div>
       
-      <div class="longform2 padtop01">
-          <iframe width="1200" height="675" src="https://www.youtube.com/embed/3dt3oOY91mM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-      <div class="longform padtop01">
+      <div class="longform ">
         <h2>Jobs Page</h2>
         <p>
-          This was such a fun project. A whole bunch of people worked on this project, and it's not alive anymore. But it captured a really fantastic moment in time for MailChimp and the people who were there. 
+          This was such a fun project. A whole bunch of people worked on it, and it's doesn't exist anymore. But it captured a really fantastic moment in time for MailChimp and the people who were there. 
          </p>
         <p>
-          You can check out the video above of how the page used to look, <a href="https://vimeo.com/101357773">watch one of the videos</a>, and <a href="http://wearecaravan.tv/work/mailchimp-recruiting-film">read a bit more</a> <a href="http://www.jasontravisdesign.com/jobs-1/">about the project</a>.
+          You can check out this video of how the page used to look, <a href="https://vimeo.com/101357773">watch one of the videos</a>, and <a href="http://wearecaravan.tv/work/mailchimp-recruiting-film">read a bit more</a> <a href="http://www.jasontravisdesign.com/jobs-1/">about the project</a>.
          </p>
+        <p><a href="http://davidsizemoredesign.com/pages/websites.html">Back to Websites</a> &#10552;</p>
+      </div>
+
+      <div id="containingBlock">
+        <div class="videoWrapper">
+          <object width="480" height="295">
+            <param name="movie" value="http://www.youtube.com/eiAISGLMwi8&fs=1&loop=1&playlist=eiAISGLMwi8&autoplay=1&autohide=1&controls=0&showinfo=0"></param>
+            <param name="allowFullScreen" value="true"></param>
+            <param name="allowscriptaccess" value="always"></param>
+            <embed src="http://www.youtube.com/v/eiAISGLMwi8&hl=en&fs=1&loop=1&playlist=eiAISGLMwi8&autoplay=1&autohide=1&controls=0&showinfo=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed>
+          </object>
+        </div>
       </div>
 
     </div><!--masonry-->

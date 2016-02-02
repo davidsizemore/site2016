@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>David Sizemore - The UX Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../assets/sizemore2015.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Karla:700,400,400italic' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  </head>
+  
+  <body>
+
+  <div class="main">
+    <div class="content">
+
+      <div id="header">
+        <h1>
+          <a href="../../index.html" style="text-decoration: none;">David Sizemore Design</a>
+        </h1>
+      </div>
+
+      <div class="grid js-masonry">
+
+      <div class="gutter-sizer"></div>
+      <div class="grid-sizer"></div>
+
+       <div class="grid-item grid-item--width2">
+        <p>
+          <em><a href="http://theuxreader.com/">The UX Reader</a></em> is an ebook written by <a href="http://www.theuxnewsletter.com/">the phenominal UX team</a> at MailChimp. It was conceived as an experiment in online selling. So many of MailChimp's users are ecommerce folks, and this was an opportunity for us experience our product from their perspective.
+        </p>
+      </div>
+
+       <div class="grid-item grid-item--width2 imageshadow">
+          <img src="../../assets/art-direction/ebook/website.jpg">
+      </div>
+
+       <div class="grid-item">
+          <img src="../../assets/art-direction/ebook/lydianichols.jpg">
+            <p class="caption">
+              <em>Lydia Nichols</em> 
+            </p>
+      </div>
+
+       <div class="grid-item">
+          <img src="../../assets/art-direction/ebook/vaughnfender.jpg">
+            <p class="caption">
+              <em>Vaughn Fender</em> 
+            </p>
+      </div>
+
+       <div class="grid-item">
+          <img src="../../assets/art-direction/ebook/pamwishbow.jpg">
+            <p class="caption">
+              <em>Pam Wishbow</em> 
+            </p>
+      </div>
+
+       <div class="grid-item grid-item--width2">
+        <p>
+          Digital products often carry a visual barrier between the user and the people producing the work. I wanted the ebook to emphasis the humanity of the people behind it, not just with language, but through visuals. Illustrators were chosen for their ability to convey that visceral feeling in their work. 
+        </p>
+      </div>
+
+       <div class="grid-item">
+          <img src="../../assets/art-direction/ebook/thispapership.jpg">
+            <p class="caption">
+              <em>This Paper Ship</em> 
+            </p>
+      </div>
+
+       <div class="grid-item">
+          <img src="../../assets/art-direction/ebook/karenkurycki.jpg">
+            <p class="caption">
+              <em>Karen Kurycki</em> 
+            </p>
+      </div>
+
+       <div class="grid-item grid-item--width2">
+          <img src="../../assets/art-direction/ebook/ebook_cover.jpg">
+            <p class="caption">
+              <a href="">
+                <em>Jane Song</em> 
+              </a>
+            </p>
+      </div>
+
+       <div class="grid-item grid-item--width2">
+          <img src="../../assets/art-direction/ebook_screenshot.jpg">
+            <p class="caption">
+              <a href="">
+                <em>Design by Jane Song</em> 
+              </a>
+            </p>
+      </div>
+
+       <div class="grid-item">
+            <h1><a href="../art-direction.html">Go Back &#10552;</a></h1>
+      </div>
+
+    </div><!--masonry-->
+
+    </div> <!--content-->
+
+      <div class="foot">
+        <div class="quarter-width">
+          <a href="../../index.html"><img src="../../assets/seyez.svg" style="max-width: 24px; padding-bottom: 18px;"></a>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="../index.html" style="color: #fff;">Home</a>
+            <br><a href="http://store.davidsizemoredesign.com/" style="color: #fff;">Store</a>
+            <br><a href="../../pages/about.html" style="color: #fff;">About</a>
+          </p>
+        </div>
+        <div class="quarter-width">
+          <p class="small"><a href="http://twitter.com/david_sizemore" style="color: #fff;">Twitter</a>
+            <br><a href="http://dribbble.com/david_sizemore" style="color: #fff;">Dribbble</a>
+            <br>&copy; 2015
+          </p>
+        </div>        
+      </div>
+
+    </div><!--main-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../../assets/imagesloaded.pkgd.js"></script>
+    <script language="javascript" type="text/javascript" src="../../assets/masonry.pkgd.js"></script>
+
+    <script type="text/javascript">
+      // external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+      // init Masonry after all images have loaded
+      var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer'
+        }); 
+      });
+    </script>
+          
+  </body>
+
+</html>
